@@ -1,0 +1,18 @@
+{
+	"node": "@viralnote/n8n-nodes-viralnote",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/viralnote/n8n-nodes-viralnote#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/viralnote/n8n-nodes-viralnote"
+			}
+		]
+	}
+}
