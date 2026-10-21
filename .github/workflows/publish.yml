@@ -17,7 +17,6 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-          registry-url: 'https://registry.npmjs.org'
           cache: npm
       - name: Install current npm for trusted publishing
         run: npm install --global npm@11
@@ -26,4 +25,4 @@ jobs:
       - run: npm run build
       - run: node --test tests/*.test.cjs
       - name: Stage release with provenance for maintainer approval
-        run: npm stage publish --access public --provenance --ignore-scripts
+        run: npm stage publish --access public --provenance --ignore-scripts --loglevel=verbose
