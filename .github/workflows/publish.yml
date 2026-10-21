@@ -25,7 +25,5 @@ jobs:
       - run: npm run lint
       - run: npm run build
       - run: node --test tests/*.test.cjs
-      - name: Publish with provenance
-        run: npm publish --access public --provenance --ignore-scripts
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Stage release with provenance for maintainer approval
+        run: npm stage publish --access public --provenance --ignore-scripts

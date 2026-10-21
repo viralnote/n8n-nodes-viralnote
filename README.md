@@ -81,6 +81,8 @@ other than the `n8n-workflow` host peer. API requests go only to
 Releases must be built by `.github/workflows/publish.yml` with npm provenance
 before submission through the [n8n Creator Portal](https://creators.n8n.io/nodes).
 The repository's npm trusted publisher must be configured before release.
+The workflow stages the package on npm. A maintainer reviews the staged package
+and approves it with npm two-factor authentication before it is published.
 
 ## Support
 
